@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>4399校招面经</title>
+      <link href="/2021/09/25/4399%E6%A0%A1%E6%8B%9B%E9%9D%A2%E7%BB%8F/"/>
+      <url>/2021/09/25/4399%E6%A0%A1%E6%8B%9B%E9%9D%A2%E7%BB%8F/</url>
+      
+        <content type="html"><![CDATA[<hr><h3 id="某团队2-5的人会Java，3-4的人会C-，团队里同时会Java和C-的最少有（-）人"><a href="#某团队2-5的人会Java，3-4的人会C-，团队里同时会Java和C-的最少有（-）人" class="headerlink" title="某团队2/5的人会Java，3/4的人会C++，团队里同时会Java和C++的最少有（ ）人"></a>某团队2/5的人会Java，3/4的人会C++，团队里同时会Java和C++的最少有（ ）人</h3><blockquote><p>5和4求最小公倍数20，此团队至少为20人，会java的至少8人，会c++的至少15人</p><p>假设团队有20人每人只会一种的话 15+8=23人，而团队20人，则有3人俩种都会，则至少3人</p></blockquote><hr><h3 id="下面代码运行的结果？"><a href="#下面代码运行的结果？" class="headerlink" title="下面代码运行的结果？"></a>下面代码运行的结果？</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Integer a = <span class="number">1</span>;</span><br><span class="line">Integer b = <span class="number">1</span>;</span><br><span class="line">System.out.println(a==b);</span><br><span class="line"><span class="comment">//true</span></span><br></pre></td></tr></table></figure><hr><h3 id="TCP-IP模型如何分层？路由器、网卡分别属于哪一层？"><a href="#TCP-IP模型如何分层？路由器、网卡分别属于哪一层？" class="headerlink" title="TCP/IP模型如何分层？路由器、网卡分别属于哪一层？"></a>TCP/IP模型如何分层？路由器、网卡分别属于哪一层？</h3><blockquote><p>TCP/IP被设计成四层概念模型：应用层，传输层，网际层（相当于网络层）和网络接口层（相当于数据链路层和物理层）</p></blockquote><table><thead><tr><th align="center">OSI层次</th><th align="center">地址类型——–设备</th></tr></thead><tbody><tr><td align="center">传输层及以上</td><td align="center">应用程序进程地址（端口）———网关（协议转换器）</td></tr><tr><td align="center">网络层</td><td align="center">网络地址（IP地址）————路由器（三层交换机）</td></tr><tr><td align="center">数据链路层</td><td align="center">物理地址）（MAC地址）————网桥，交换机（网卡）</td></tr><tr><td align="center">物理层</td><td align="center">无————中继器，集线器（网卡）</td></tr></tbody></table><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> 面经 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 4399 </tag>
+            
+            <tag> Java后端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>0～n-1中缺失的数字</title>
       <link href="/2021/09/13/0%EF%BD%9En-1%E4%B8%AD%E7%BC%BA%E5%A4%B1%E7%9A%84%E6%95%B0%E5%AD%97/"/>
       <url>/2021/09/13/0%EF%BD%9En-1%E4%B8%AD%E7%BC%BA%E5%A4%B1%E7%9A%84%E6%95%B0%E5%AD%97/</url>
