@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Integer使用==比较大小</title>
+      <link href="/2021/09/26/Integer%E4%BD%BF%E7%94%A8==%E6%AF%94%E8%BE%83%E5%A4%A7%E5%B0%8F/"/>
+      <url>/2021/09/26/Integer%E4%BD%BF%E7%94%A8==%E6%AF%94%E8%BE%83%E5%A4%A7%E5%B0%8F/</url>
+      
+        <content type="html"><![CDATA[<hr><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testInteger</span><span class="params">()</span></span>&#123;</span><br><span class="line">    Integer a = <span class="number">128</span>;</span><br><span class="line">    Integer b = <span class="number">128</span>;</span><br><span class="line">    Integer c = <span class="keyword">new</span> Integer(<span class="number">128</span>);</span><br><span class="line">    Integer d = <span class="keyword">new</span> Integer(<span class="number">128</span>);</span><br><span class="line">    System.out.println(a==b);   <span class="comment">//false</span></span><br><span class="line">    System.out.println(c==d);   <span class="comment">//false</span></span><br><span class="line">    System.out.println(b==c);   <span class="comment">//false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br/><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testInteger2</span><span class="params">()</span></span>&#123;</span><br><span class="line">    Integer a = <span class="number">127</span>;</span><br><span class="line">    Integer b = <span class="number">127</span>;</span><br><span class="line">    Integer c = <span class="keyword">new</span> Integer(<span class="number">127</span>);</span><br><span class="line">    Integer d = <span class="keyword">new</span> Integer(<span class="number">127</span>);</span><br><span class="line">    System.out.println(a==b);   <span class="comment">//true</span></span><br><span class="line">    System.out.println(c==d);   <span class="comment">//false</span></span><br><span class="line">    System.out.println(b==c);   <span class="comment">//false</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h2><ul><li>Ingeter是int的包装类，int的初值为0，Ingeter的初值为null。</li><li>无论如何，Integer与new Integer()不会相等。不会经历拆箱过程，new出来的指向堆，非new的专门存放他的内存（常量池），他们的内存地址不一样，使用 == 比较都为false。</li><li>两个都是非new出来的Integer，使用 == 比较，如果数在-128到127之间，则是true，否则为false，因为大于127就相当于是new出来的，存放在堆。</li><li>两个都是new出来的，==比较都为false。若要比较值是否相等，需使用equals方法进行比较。</li><li>int和Integer(无论new否)比，都为true，因为会把Integer自动拆箱为int再去比。</li></ul><br/><br/><br/>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>找出满足条件的三元组</title>
       <link href="/2021/09/25/%E6%89%BE%E5%87%BA%E6%BB%A1%E8%B6%B3%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%89%E5%85%83%E7%BB%84/"/>
       <url>/2021/09/25/%E6%89%BE%E5%87%BA%E6%BB%A1%E8%B6%B3%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%B8%89%E5%85%83%E7%BB%84/</url>
